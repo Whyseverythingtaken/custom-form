@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import 'react-dates/initialize';
 
 import 'rc-slider/assets/index.css';
 import 'react-dates/lib/css/_datepicker.css';
-import DeliveryForm from './components/DeliveryForm';
+import DeliveryForm from './DeliveryForm';
 
 class App extends Component {
   render() {

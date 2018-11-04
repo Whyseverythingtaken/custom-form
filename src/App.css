@@ -9,31 +9,57 @@
   padding: 20px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.border {
+  box-shadow: 0 2px 6px rgba(0,0,0,.05), 0 0 0 1px rgba(0,0,0,.07);
+  border-radius: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.rightSection {
+  min-width: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+.padding {
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.label {
+  color: hsl(0, 0%, 40%);
+  font-size: 0.9em;
+}
+
+.date {
+  min-width: 110px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.formBottom {
+  min-width: 930px;
+}
+
+.button {
+  border-radius: 4px;
+    font-size: 16px;
+    padding-bottom: 12px;
+    font-weight: 800;
+    border: transparent;
+    cursor: pointer;
+    padding: 12px 24px;
+    background: #ffffff;
+    color:#000000;
+}
+
+.buttonPrimary {
+  background: #00a699 !important;
+  color:#ffffff !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

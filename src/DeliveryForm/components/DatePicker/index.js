@@ -11,12 +11,7 @@ class DatePicker extends React.PureComponent {
     endDate: null,
     focusedInput: 'startDate'
   };
-
-  // handleChange = (value) => {
-  //   console.log('value', value);
-  //   this.props.input.onChange(value);
-  // };
-
+  
   onDatesChange = (value) => {
     this.props.input.onChange(value);
   }
@@ -30,6 +25,7 @@ class DatePicker extends React.PureComponent {
     const { input: { value } } = this.props;
     return (
       <DayPickerRangeController
+        noBorder
         numberOfMonths={2}
         onDatesChange={this.onDatesChange}
         onFocusChange={this.onFocusChange}

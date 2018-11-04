@@ -3,7 +3,6 @@
  */
 
 import React from 'react';
-import { FormSpy } from 'react-final-form';
 import Moment from 'moment';
 import { Flex, Box } from '@rebass/grid';
 import get from 'lodash.get';
@@ -23,26 +22,20 @@ class TimePicker extends React.PureComponent {
   }
 
   render() {
-    const { namespace } = this.props;
+    const { values, namespace } = this.props;
+    const start = this.formatTime(get(values, [0]));
+    const end = this.formatTime(get(values, [1]));
     return (
-      <FormSpy subscription={{ values: true }}>
-        {({ values }) => {
-          const start = this.formatTime(get(values, [namespace, 0]));
-          const end = this.formatTime(get(values, [namespace, 1]));
-          return (
-            <Flex>
-              <Box>
-                <span>
-                  {namespace}
-                </span>
-              </Box>
-              <Box>
-                <span>{`${start} - ${end}`}</span>
-              </Box>
-            </Flex>
-          );
-        }}
-      </FormSpy>
+      <Flex>
+        <Box mr="20px">
+          <span className="label">
+            {namespace}
+          </span>
+        </Box>
+        <Box>
+          <span>{`${start} - ${end}`}</span>
+        </Box>
+      </Flex>
     );
   }
 }
