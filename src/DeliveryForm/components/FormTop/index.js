@@ -20,7 +20,7 @@ class FormTop extends React.PureComponent {
                   <span className="label">
                     Pickup
                   </span>
-                  <span className="date">
+                  <span className="date bold">
                     {formattedStartDate || ''}
                   </span>
                 </div>
@@ -38,7 +38,7 @@ class FormTop extends React.PureComponent {
                   <span className="label">
                     Drop
                   </span>
-                  <span className="date">
+                  <span className="date bold">
                     {formattedEndDate || ''}
                   </span>
                 </div>

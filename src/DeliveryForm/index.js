@@ -22,7 +22,10 @@ class DeliveryForm extends React.PureComponent {
     return (
       <Form
         initialValues={initialValues}
-        onSubmit={values => alert(values)}
+        onSubmit={values => {
+          const message = `Submitted! 🙌 🎉 \n\n ${JSON.stringify(values)}`;
+          alert(message);
+        }}
       >
         {({ form, values }) => (
           <div>
@@ -67,12 +70,12 @@ class DeliveryForm extends React.PureComponent {
                   component={PriceRange}
                 />
               </Box>
-              <Box mr="5px" mt="20px">
+              <Box mr="5px" mt="60px">
                 <button className="button" onClick={form.reset}>
                   Cancel
                 </button>
               </Box>
-              <Box mt="20px">
+              <Box mt="60px">
                 <button className="button buttonPrimary" onClick={form.submit}>
                   Submit
                 </button>

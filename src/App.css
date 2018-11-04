@@ -37,16 +37,21 @@
   min-width: 930px;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .button {
   border-radius: 4px;
     font-size: 16px;
     padding-bottom: 12px;
     font-weight: 800;
     border: transparent;
+    box-shadow: 0 2px 6px rgba(0,0,0,.05), 0 0 0 1px rgba(0,0,0,.07);
     cursor: pointer;
     padding: 12px 24px;
     background: #ffffff;
-    color:#000000;
+    color:#001614;
 }
 
 .buttonPrimary {

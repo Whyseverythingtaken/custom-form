@@ -33,6 +33,8 @@ class TimePicker extends React.PureComponent {
             max={1440}
             step={15}
             onChange={this.onTimeChange}
+            trackStyle={[{ backgroundColor: '#00a599' }]}
+            handleStyle={[{ backgroundColor: '#00a599', borderColor: '#00a599'}, { backgroundColor: '#00a599', borderColor: '#00a599'}]}
           />
         </Box>
       </Flex>
